@@ -7,6 +7,10 @@
         </p>
         <p> Comment: 
             <%= comment.body %>
+            <%= link_to '[X]', [comment.post, comment],
+                                method: :delete,
+                                data: {confirm: 'Are you sure???'}
+            %>
         </p>
     </div>
-<% end %>  
+<% end %>
