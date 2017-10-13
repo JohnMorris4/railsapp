@@ -12,6 +12,7 @@ class PagesController < ApplicationController
 	def services
 		@title = 'Services'
 		@content = 'Welcome to the Services Page'
+        @services = ['Web Development', 'Full Stack Development', 'Custom Designs', 'PHP']
 	end
 
 	def contact
